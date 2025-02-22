@@ -13,11 +13,15 @@ A simple weather dashboard hosted on AWS EC2 with Docker.
 ✅ Uses Elastic IP for a fixed public address
 
 📌 AWS CloudFormation Deployment
+
+
 I used AWS CloudFormation to automate EC2 and Security Group creation. Below is a summary:
 
 🔹 EC2 Instance: Launched an Amazon Linux 2 instance
 🔹 Security Groups: Allowed HTTP (80) & SSH (22) access
 🔹 Key Pair: Used for SSH authentication
+
+
 ##AWSTemplateFormatVersion: '2010-09-09'
 Description: CloudFormation template to deploy an EC2 instance with a web server.
 Parameters:
